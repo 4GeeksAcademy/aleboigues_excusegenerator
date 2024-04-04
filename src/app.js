@@ -20,14 +20,13 @@ window.onload = function() {
     "after my birthday"
   ];
 
-  const randomExcuse = `${who[randomIndexFunction(who.length)] +
-    " " +
-    action[randomIndexFunction(action.length)] +
-    " " +
-    what[randomIndexFunction(what.length)]}`;
-  " " + when[randomIndexFunction(action.length)];
+  const randomExcuse = `${who[randomIndexFunction(who.length)]} ${
+    action[randomIndexFunction(action.length)]
+  } ${what[randomIndexFunction(what.length)]} ${
+    when[randomIndexFunction(action.length)]
+  }`;
 
   document.getElementById("excuse").innerHTML = randomExcuse;
 
-  console.log("hello ringo from the console");
+  console.log(randomExcuse);
 };
